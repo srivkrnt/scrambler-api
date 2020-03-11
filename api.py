@@ -7,7 +7,7 @@ fileName = 'words.txt'
 easyWordFile = 'easy_words.txt'
 
 
-@app.route('/all')
+@app.route('/')
 def index():
     file = open(fileName)
     words = file.readlines()
@@ -21,7 +21,7 @@ def index():
     response['noOfWords'] = noOfWords
     return response
 
-@app.route('/')
+@app.route('/all')
 def easy_words():
     file = open(easyWordFile)
     words = file.readlines()
