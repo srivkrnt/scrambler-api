@@ -6,6 +6,7 @@ app = Flask(__name__)
 fileName = 'words.txt'
 easyWordFile = 'easy_words.txt'
 
+# REDEPLOY: 18-NOV-2022
 
 @app.route('/')
 def index():
